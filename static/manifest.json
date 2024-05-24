@@ -1,10 +1,10 @@
 {
-    "name": "Hypixel API • Reborn Documentation",
-    "short_name": "Hypixel API • Reborn Docs",
-    "theme_color": "#ff8c00",
-    "background_color": "#2f3236",
-    "display": "browser",
-    "Scope": "/",
-    "start_url": "/",
-    "splash_pages": null
-  }
+  "name": "Hypixel API • Reborn Documentation",
+  "short_name": "Hypixel API • Reborn Docs",
+  "theme_color": "#ff8c00",
+  "background_color": "#2f3236",
+  "display": "browser",
+  "Scope": "/",
+  "start_url": "/",
+  "splash_pages": null
+}

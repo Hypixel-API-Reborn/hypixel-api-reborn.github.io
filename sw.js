@@ -1,6 +1,6 @@
 const GITHUB_ORG = 'https://raw.githubusercontent.com/hypixel-api-reborn/';
 
-self.addEventListener('fetch', event => {
+self.addEventListener('fetch', (event) => {
   const req = event.request;
   const url = new URL(req.url);
   event.respondWith(url.origin === location.origin ? cacheFirst(req) : networkFirst(req));
@@ -14,7 +14,7 @@ async function fetchAndCache(req, cacheName) {
 }
 
 async function cacheFirst(req) {
-  return await caches.match(req) || fetchAndCache(req, 'site');
+  return (await caches.match(req)) || fetchAndCache(req, 'site');
 }
 
 async function networkFirst(req) {
